@@ -1,0 +1,162 @@
+@charset 'UTF-8';
+
+html,
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add body selector */
+
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+}
+
+header {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.35em;
+}
+.site-nav-open {
+    display: none;
+}
+.site-nav-close {
+    display: none;
+ }
+.site-nav {
+    position: relative;
+    display: block !important;
+    float: right;
+    width: 80%;
+    padding: .75em 1em 0 0;
+    background: none;
+  }
+
+.site-nav ul {
+    margin: 0;
+    text-align: right;
+}
+.site-nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+.site-nav ul li a {
+    font-size: .85em;
+    padding-bottom: .5em;
+  	text-decoration: none;
+  	letter-spacing: .15em;
+  	text-transform: uppercase;
+  	color: #fff;
+  	-webkit-transition: color .3s;
+  	transition: color .3s;
+}
+.site-nav ul li a:hover,
+.site-nav ul li a:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+header.dark .site-logo-dark {
+    opacity: 1;
+}
+header.dark .site-logo-white {
+    opacity: 0;
+}
+header.dark .site-nav ul li a {
+    color: #000000;
+}
+header.dark .site-nav ul li a:hover,
+header.dark .site-nav ul li a:focus {
+    border-color: #000000;
+ }
+.hero {
+  height: 53.5vw;
+  color: #fff;
+}
+
+.hero-content {
+  font-family: arial, sans-serif;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.hero-leadin {
+  font-size: 1.75em;
+  font-weight: 100;
+  line-height: 1.55;
+  margin-bottom: -.35em;
+  padding-top: 6.5em;
+  letter-spacing: .85em;
+  text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+}
+.hero-leadin span {
+  display: block;
+}
+.hero-title {
+  font-size: 8.5em;
+  margin-bottom: 1.5%;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0,.05);
+}
+.hero-date {
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+}
+.hero-date span {
+  display: block;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+
+.hero-date {
+  line-height: 2.75;
+  letter-spacing: .35em;
+}
+
+.intro {
+  padding: 9em 6em 9.5em;
+}
+.intro-date {
+  top: 28%;
+}
+.intro p {
+  font-size: 2.25em;
+  line-height: 2;
+  letter-spacing: .32em;
+}
+.intro-text {
+  width: 37em;
+  margin: 0 auto;
+}
+.intro-text:before {
+  top: -3%;
+  right: 11%;
+  height: 52em;
+  margin: 0 auto;
+}
+
+}
+
+
